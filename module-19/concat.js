@@ -12,4 +12,4 @@ console.log(fullName);
 
 // includes
 console.log(last.includes('d'));
-console.log(last.includes('x'));
+console.log(last.includes('L'));
