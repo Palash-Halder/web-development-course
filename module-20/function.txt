@@ -1,0 +1,11 @@
+What is function
+
+- A block of code
+- A set of statement that performs a task when it is called
+- Maintains a relationship with input and output
+
+
+making suare
+adding sth
+
+loop vs function
