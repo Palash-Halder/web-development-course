@@ -31,7 +31,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 
-//reverse side
+//reverse side / decremental for loop
 
 const  rev_rev_numbers = [];
 
