@@ -53,3 +53,8 @@ function getAge(person) {
     const age = person.age;
     return age;
 }
+
+// will return as an object
+function getMenu() {
+    console.log("Burger, Pizza, Pasta");
+   }
