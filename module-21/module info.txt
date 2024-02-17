@@ -1,0 +1,60 @@
+Don't use var keyword
+Type of variables: 
+    Primitive: 
+        Number
+        String
+        Boolean
+        
+
+        Undefine
+        Null
+        NaN
+    Non-Primitive: 
+        Array
+        Object
+
+Conditional:
+    <, >, >=, <=, ====, !===
+    &&,     ||
+    
+    if (....){
+        else
+    }
+
+3. Array [];
+    index starts from- 0
+    number [3] = 45
+    push
+    pop
+    shift
+    unshift
+    includes
+    join
+    slice
+
+4. Loop
+    for of: 
+    while
+    for
+    break
+    continue 
+
+5. Object:
+    Property: value
+    dot notation
+    bracket notation
+    for in
+
+6. function name(param){
+
+}
+name();
+
+const দিয়ে array declare করলে array change করা যাবে না
+কিন্তু array-এর উপাদান পরিবর্তন করা যাবে
+
+const দিয়ে object declare করলে object এর property: value change করা যাবে
+কিন্তু পুরো object-টা পরিবর্তন করা যাবে না।
+
+
+
