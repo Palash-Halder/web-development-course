@@ -18,7 +18,7 @@
 const income = ticketSale(50);
 */
 
-/*
+
 function calculateMoney(ticketSale) {
 
     if(ticketSale < 0){
@@ -39,12 +39,17 @@ function calculateMoney(ticketSale) {
 
     
 }
+
+console.log(calculateMoney(-10));
+console.log(calculateMoney());
+
+
 calculateMoney();
 
 const output = calculateMoney(-10);
 console.log(output);
 
-*/
+
 
 const names = [raju, hadi, pronoy, palash];
 
