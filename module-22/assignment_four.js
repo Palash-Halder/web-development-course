@@ -69,4 +69,17 @@ function deleteInvalids(array){
 //console.log(deleteInvalids(160));
 
 
+function password(obj) {
+
+    const obj = { name, birthYear, siteName};
+    const name = name.toLowerCase();
+    const formatedSiteName = siteName.charAt(0).toUpperCase() + siteName.slice(1);
+
+    const password = `${formatedSiteName}#${username}@${birthYera}`;
+
+    return password = generatePassword(password);
+    
+}
+
+console.log({name: "Palash", birthYear: "1971", siteName: "addidas" });
 
