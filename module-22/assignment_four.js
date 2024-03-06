@@ -24,6 +24,8 @@ function calculateMoney(ticketSale) {
 }
 
 
+
+
 //Problem: 02
 function checkName(name) {
 
@@ -46,10 +48,108 @@ function checkName(name) {
 
 }
 
-console.log(checkName('palas'));
+//console.log(checkName('palas'));
 
 
 //Problem: 03
+
+function deleteInvalids(array){
+
+    if (!Array.isArray(array)){
+        return 'ইনপুট হিসেবে একটা array দাও না প্লিজ।';
+
+    }
+    else{
+
+        return array.filter(element => typeof element === "number");
+    }
+        
+
+}
+
+
+console.log(deleteInvalids([12, 10, 78, 'Palash']));
+console.log(deleteInvalids(160));
+
+
+
+//Problem: 04
+
+function password(obj) {
+
+
+    const name = obj.name;
+    const birthYear = obj.birthYear;
+    const siteName = obj.siteName;
+
+    const username = name.toLowerCase();
+
+    const firstLetterOfSiteCapitalized = siteName.charAt(0).toUpperCase();
+    const otherLettersOfSite = siteName.slice(1);
+    const formattedSiteName = firstLetterOfSiteCapitalized + otherLettersOfSite;
+
+    const password = formattedSiteName + '#' + username + '@' + birthYear;
+
+    return password;
+}   
+
+// const userDetails = {
+//     name: "kolimuddin",
+//     birthYear: 1999,
+//     siteName: "google",
+// }
+
+// const targetedPassword = password(userDetails);
+// console.log(targetedPassword);
+
+
+
+
+
+
+//Problem: 05
+
+function monthlySavings(arr, livingCost) {
+
+    let totalPaymentReceived = 0;
+    
+    for(let i = 0; i <arr.length; i++){
+
+        let payment = arr[i];
+
+        if(payment >= 30000){
+            payment -= payment * 0.2;
+        }
+
+        totalPaymentReceived  += payment;
+    }
+
+    let totalSavings = totalPaymentReceived - livingCost;
+
+    if(totalSavings < 0){
+        return 'earn more';
+
+    }
+    else{
+        return totalSavings;
+    }
+}
+
+
+// const arr = [1000, 2000, 5500];
+// const livingCost = 5000;
+
+// const totalSavings = monthlySavings(arr, livingCost);
+
+
+// console.log(totalSavings);
+
+
+
+
+
+
+/*
 function deleteInvalids(array){
 
     if (!Array.isArray(array)){
@@ -71,7 +171,7 @@ function deleteInvalids(array){
 
 function password(obj) {
 
-    const obj = { name, birthYear, siteName};
+    const myobj = { name, birthYear, siteName};
     const name = name.toLowerCase();
     const formatedSiteName = siteName.charAt(0).toUpperCase() + siteName.slice(1);
 
@@ -83,3 +183,33 @@ function password(obj) {
 
 console.log({name: "Palash", birthYear: "1971", siteName: "addidas" });
 
+
+
+
+function password(obj) {
+
+
+    const name = obj.name;
+    const birthYear = obj.birthYear;
+    const siteName = obj.siteName;
+
+    const username = name.toLowerCase();
+
+    const firstLetterOfSiteCapitalized = siteName.charAt(0).toUpperCase();
+    const otherLettersOfSite = siteName.slice(1);
+    const formattedSiteName = firstLetterOfSiteCapitalized + otherLettersOfSite;
+
+    const password = formattedSiteName + '#' + username + '@' + birthYear;
+
+    return password;
+}   
+
+// const userDetails = {
+//     name: "kolimuddin",
+//     birthYear: 1999,
+//     siteName: "google",
+// }
+
+// const targetedPassword = password(userDetails);
+// console.log(targetedPassword);
+*/
